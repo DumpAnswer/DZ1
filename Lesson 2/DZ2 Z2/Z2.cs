@@ -18,6 +18,7 @@ namespace DZ2_Z2
             {
                 case 1:
                     NameMonth = "Январь";
+                    Console.WriteLine("Зимний месяц");
                     break;
                 case 2:
                     NameMonth = "Февраль";
