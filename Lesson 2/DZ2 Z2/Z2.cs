@@ -10,15 +10,24 @@ namespace DZ2_Z2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Какая самая высокая темепратура была сегодня ?"); // Добавил еще решение  5 задачи сюда!
+            string MaxTemp = Console.ReadLine();
+            int a = Convert.ToInt32(MaxTemp);
+            
+            Console.WriteLine("А какая самая низкая за сегодня? ");
+            string MinTemp = Console.ReadLine();
+            int b = Convert.ToInt32(MinTemp);
+            int MedTemp = (a + b) / 2;
+
             Console.WriteLine("Введите порядковый номер текушего месяца:");
             string Month = Console.ReadLine();
-            int a = Convert.ToInt32(Month);
+            int m = Convert.ToInt32(Month);
             string NameMonth = "";
-            switch (a)
+            
+            switch (m)
             {
                 case 1:
                     NameMonth = "Январь";
-                    Console.WriteLine("Зимний месяц");
                     break;
                 case 2:
                     NameMonth = "Февраль";
@@ -53,8 +62,17 @@ namespace DZ2_Z2
                 case 12:
                     NameMonth = "Воскресенье";
                     break;
-            }
+            } 
+              if (MedTemp < 0)
+              {
 
+                Console.WriteLine("На улице то холодно");
+              }
+              else                
+              {
+                Console.WriteLine("Теплая погода");
+              }
+              
             Console.WriteLine(NameMonth);
             Console.ReadKey();
         }
