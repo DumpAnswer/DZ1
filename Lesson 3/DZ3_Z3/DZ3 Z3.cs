@@ -11,12 +11,17 @@ namespace DZ3_Z3
 
 		{
 
-			string say = "Hello";
+			Console.WriteLine ("Напишите любое слово");
+			
+			string say = Console.ReadLine();
+		
+			
 
 			for (int i = say.Length - 1; i >= 0; i--)
 			{
 				Console.Write(say[i]);
-				Console.ReadKey();
+                Console.ReadKey();
+
 
 
 			}
